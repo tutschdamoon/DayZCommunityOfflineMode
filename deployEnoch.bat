@@ -1,5 +1,5 @@
 @echo off
-setlocal enableextensions enabledelayedexpansion 
+setlocal enableextensions enabledelayedexpansion
 
 cd /D "%~dp0"
 
@@ -25,10 +25,10 @@ if %failed%==1 (
 
 set "ClientDirectory=%_DAYZPATH%"
 
-RD /s /q "%ClientDirectory%\Missions\DayZCommunityOfflineMode.Enoch" > NUL
-xcopy /s/e /y /i "%cd%\Missions\DayZCommunityOfflineMode.Enoch" "%ClientDirectory%\Missions\DayZCommunityOfflineMode.Enoch" > NUL
+RD /s /q "%ClientDirectory%\DayZCommunityOfflineMode.Enoch" > NUL
+xcopy /s/e /y /i "%cd%\DayZCommunityOfflineMode.Enoch" "%ClientDirectory%\DayZCommunityOfflineMode.Enoch" > NUL
 
-chdir /d "%ClientDirectory%\Missions\DayZCommunityOfflineMode.Enoch"
+chdir /d "%ClientDirectory%\DayZCommunityOfflineMode.Enoch"
 
 setlocal DisableDelayedExpansion
 
